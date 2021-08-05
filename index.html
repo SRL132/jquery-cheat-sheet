@@ -1,0 +1,733 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JQUERY CHEATSHEET</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <header><h1>WELCOME TO JQUERYPEDIA</h1></header>
+        <!--Main-->
+        <main class="main" id="main">
+            <section class="left"> 
+                <h3>Events</h3>
+                <ol id="left_ol1" class="left_li">
+                    <li class="left_li"> <a href="#initial">When the HTML document has been loaded and you can manipulate it with JavaScript</a></li>
+                    <li class="left_li"> <a href= "#clickButton">When an HTML item has been clicked</li></a>
+                    <li class="left_li"> <a href="#doubleClickButton">When an HTML item has been double clicked</li></a>
+                    <li class="left_li"> <a href= "#pressKey">When The user presses a key on the keyboard</li></a>
+                    <li class="left_li"> <a href= "#hoverButton">When the user moves the mouse cursor</li></a>
+                    <li class="left_li"> <a href="#inputText">When the user changes a value of an text input</li></a>
+                    <li class="left_li"> <a href= "#jquery_img">When an image is loaded</li></a>
+                    <li class="left_li"> <a href= "#jquery_img_fail">When an image fails to load, (if you write an incorrect image url the loading of the image will fail)</li></a>
+                    <li class="left_li"> <a href="#submitButton">When a form is submitted</li></a>
+                    <li class="left_li"> <a href="#selectButton">When the user changes the option of a select element</li></a>
+                    <li class="left_li"> <a href="#mouseBtn">When you position the mouse over an element</li></a>
+                    <li class="left_li"> <a href= "#checkButton">When a checkbox is checked or unchecked</li></a>
+                    <li class="left_li"> <a href= "#uList">When a ul list item is clicked, show the item that was clicked</li></a>
+                </ol>
+                <h3>Functions and Selectors</h3>
+                <ol id="left_ol2" class="left_li">
+                    <li class="left_li"> <a href="#creationDiv">Create an HTML element with any text value</li></a>
+                    <li class="left_li"> <a href="#removeButton">Remove an HTML element with any text value</li></a>
+                    <li class="left_li"> <a href="#appendDiv">Append an HTML element with any text value to a parent element</li></a>
+                    <li class="left_li"> <a href="#prependDiv">Prepend an HTML element with any text value to a parent element</li></a>
+                    <li class="left_li"> <a href="#createAdd">Create and add an HTML element with any text value after another element</li></a>
+                    <li class="left_li"> <a href="#cloneButton">Clone an HTML element within other element</li></a>
+                    <li class="left_li"> <a href="#addClassButton">Add a class to an HTML item</li></a>
+                    <li class="left_li"> <a href="#removeClassButton">Remove a class to an HTML item</li></a>
+                    <li class="left_li"> <a href="#toggleClassButton">Toggle a class of an HTML item</li></a>
+                    <li class="left_li"> <a href="#attributeButton">Add a disabled attribute to an HTML button</li></a>
+                    <li class="left_li"> <a href="#remAttributeButton">Remove the disabled attribute of an HTML button</li></a>
+                    <li class="left_li"> <a href="#imgToChange">Set a data-src attribute to a img element</li></a>
+                    <li class="left_li"> <a href="#srcRemButton">Remove the data-src attribute of the img element</li></a>
+                    <li class="left_li"> <a href="#hideButton">Hide an HTML element on click (display: none)</li></a>
+                    <li class="left_li"> <a href="#showButton">Show an HTML element on click (display: block)</li></a>
+                    <li class="left_li"> <a href="#fadeInButton">Fade in an HTML element using jQuery</li></a>
+                    <li class="left_li"> <a href="#fadeOutButton">Fade out an HTML element using jQuery</li></a>
+                    <li class="left_li"> <a href="#iterateButton">Iterate a collection of elements and apply a change of style on them</li></a>
+                    <li class="left_li"> <a href="#ParentButton">Get the parent element of a certain element and change its font weight</li></a>
+                    <li class="left_li"> <a href="#ParentButton2">Get the collection of children of a certain element and change its font weight</li></a>
+                    <li class="left_li"> <a href="#sameClass">Get all the elements that have a certain class and change their font weight</li></a>
+                    <li class="left_li"> <a href="#fontChangeButton">Get an item by id and change its font weight</li></a>
+                    <li class="left_li"> <a href="#sameClassButton">Get all the elements that have a certain class and the display property of none and change their font color</li></a>
+                    <li class="left_li"> <a href="#attrButton">Get the options of a select element that are selected (attribute selected)</li></a>
+                    <li class="left_li"> <a href="#hrefButton">Change the href attribute of the first &lt;a&gt; element (You have to create several &lt;a&gt; elements)</li></a>
+                    <li class="left_li"> <a href="#alertButton">Show an alert with the value of the first &lt;input&gt; of the page (Create an &lt;input&gt; element to test this case)</li></a>
+                    <li class="left_li"> <a href="#remSelButton">Remove all items from a specific selector</li></a>
+                    <li class="left_li"> <a href="#animButton">Animate an item after 2 seconds from the initial page load</li></a>
+                </ol>
+            </section>
+            </div>
+            <section class="center">
+                <div class="ini" id="initial">
+                    Welcome to Jquerypedia. Please, click on the items on the left menu to learn more about them.
+                </div>
+                <div class="center_div">
+
+                </div>
+              
+                <div class="center_div">
+                    When the HTML document has been loaded and you can manipulate it with JavaScript
+                  <div>
+                    <h5>JQUERY Code</h5>
+                    <button class="button" id="load">Try it out (JQUERY)</button>
+                    <p id="loadP"></p>
+                  </div>
+                  <div>
+                    <h5>Javascript Code</h5>
+                    <button class="button" id="load_js">Try it out (JAVASCRIPT)</button>
+                    <p id="loadP_js"></p>
+                  </div>
+                </div>
+                    
+                <div class="center_div">
+                    When an HTML item has been clicked
+                    <div>
+                     <h5>JQUERY Code</h5>
+
+                    <button class="button" id="clickButton">Try it out (JQUERY)</button>
+                    </div>
+                    <div>
+                     <h5>Javascript Code</h5>
+                    <button class="button" id="clickButton_js">Try it out (JAVASCRIPT)</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    When an HTML item has been clicked twice
+                    <div>
+                     <h5>JQUERY Code</h5>
+                    <button class="button" id="doubleClickButton">Try it out (JQUERY)</button>
+                    </div>
+                    <div>
+                     <h5>Javascript Code</h5>
+                    <button class="button" id="doubleClickButton_js">Try it out (JAVASCRIPT)</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    When the user presses a key on the keyboard
+                    <div>
+                     <h5>JQUERY Code</h5>
+                    <button class="button" id="pressKey">Click and Press any key</button>
+                    </div>
+                    <div>
+                     <h5>Javascript Code</h5>
+                    <button class="button" id="pressKey_js">Click and Press any key</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    When the user moves the mouse cursor
+                    <div>
+                     <h5>JQUERY Code</h5>
+                    <button class="button" id="hoverButton">Click and Press any key</button>
+                    </div>
+                    <div>
+                     <h5>Javascript Code</h5>
+                    <button class="button" id="hoverButton_js">Click and Press any key</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    When the user changes a value of a text input
+                    <h5>JQUERY Code</h5>
+                    <form>
+                        <input type="text" id="inputText" placeholder="write here"><br>
+                    </form>
+                    <div>                   
+                    <button class="button" id="inputButton">Try writing something</button>
+                    </div>
+                    <div>
+                        <h5>Javascript Code</h5>
+                        <form>
+                            <input type="text" id=inputText_js placeholder="write here"><br>
+                        </form>
+                        <div>
+                     
+                    <button class="button" id="inputButton_js">Try writing something</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        When an image is loaded
+                        <div>
+                         <h5>JQUERY Code</h5>
+                         <img id="jquery_img" src="assets/images/jquery.png"><br><br>
+                        <button class="button" id="imageLoadBtn">Click and Press any key</button>
+                        </div>
+                        <div>
+                         <h5>Javascript Code</h5>
+                         <img id="javascript_img" src="assets/images/JavaScript_logo.png"><br><br>
+                        <button class="button" id="imageLoadBtn_js">Click and Press any key</button>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            When an image fails to load, (if you write an incorrect image url the loading of the image will fail)
+                            <div>
+                                <h5>JQUERY Code</h5>
+                                <img id="jquery_img_fail" src="not gonna load"><br><br>
+                            <button class="button" id="imageLoadBtnFail">Click and Press any key</button>
+                               </div>
+                               <div>
+                                <h5>Javascript Code</h5>
+                                <img id="javascript_img_fail" src="not gonna load"><br><br>
+                               <button class="button" id="imageLoadBtnFail_js">Click and Press any key</button>
+                               </div>
+                </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        When a form is submitted
+                        <div>
+                         <h5>JQUERY Code</h5>
+                         <form id="form">
+                             <input type="text" for="submitButton">
+                             <button class="button" id="submitButton">Submit</button>
+                        </form>
+                        </div>
+                        <div>
+                         <h5>Javascript Code</h5>
+                         <form id="form_js">
+                             <input type="text" for= "submitButton_js">
+                            <button class="button" id="submitButton_js">Submit</button>
+                        </form>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        When the user changes the option of a select element
+                        <div>
+                         <h5>JQUERY Code</h5>
+                         <select id="select">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                         </select>
+                        <button class="button" id="selectButton">Click and Press any key</button>                       
+                        </div>
+                        <div>
+                         <h5>Javascript Code</h5>
+                         <select id="select_js">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                         </select>
+                        <button class="button" id="selectButton_js">Click and Press any key</button>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            When you position the mouse over an element
+                            <div>
+                                <h5>JQUERY Code</h5>
+                               <button class="button" id="mouseBtn">Click and Press any key</button>
+                               </div>
+                               <div>
+                                <h5>Javascript Code</h5>
+                               <button class="button" id="mouseBtn_js">Click and Press any key</button>
+                               </div>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            When a checkbox is checked or unchecked
+                            <div>
+                             <h5>JQUERY Code</h5>
+                             <input id="checkbox" type="checkbox">
+                            <button class="button" id="checkButton">Click and Press any key</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                             <input id="checkbox_js" type="checkbox">
+                            <button class="button" id="checkButton_js">Click and Press any key</button>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            When a ul list item is clicked, show the item that was clicked
+                            <div>
+                             <h5>JQUERY Code</h5>
+                             <ul id="uList">
+                                 <li>meat</li>
+                                 <li>vegetables</li>
+                                 <li>steroids</li>
+                             </ul>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                             <ul id="uList_js">
+                                <li>meat</li>
+                                <li>vegetables</li>
+                                <li>steroids</li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div" id="creationDiv">
+                        Create an HTML element with any text value
+                        <div>
+                         <h5>JQUERY Code</h5>
+                        <button class="button" id="createButton">Create Element</button>
+                        </div>
+                        <div>
+                         <h5>Javascript Code</h5>
+                        <button class="button" id="createButton_js">Create Element</button>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        Remove an HTML element with any text value
+                        <div>
+                         <h5>JQUERY Code</h5>
+                        <button class="button" id="removeButton">Remove Element</button>
+                        <p id="remove">Remove me</p>
+                        </div>
+                        <div>
+                         <h5>Javascript Code</h5>
+                        <button class="button" id="removeButton_js">Remove Element</button>
+                        <p id="remove_js">Remove me</p>
+                    </div>
+                </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div" id="appendDiv">
+                            Append an HTML element with any text value to a parent element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="appendButton">Append Element</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="appendButton_js">Append Element</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div" id="prependDiv">
+                            Prepend an HTML element with any text value to a parent element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="prependButton">Prepend Element</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="prependButton_js">Prepend Element</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Clone an HTML element within other element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="cloneButton">CloneElement</button>
+                            <p id="CloneMe">Clone me</p>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="cloneButton_js">Clone Element</button>
+                            <p id="CloneMe_js">Clone me</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div" id="divAdd">
+                            Create and add an HTML element with any text value after another element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="createAdd">Create and add</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="createAdd_js">Create and add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Clone an HTML element within other element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="hoverButton">Clone Element</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="hoverButton_js">Clone Element</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Add a class to an HTML item
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="addClassButton">Add Class</button>
+                            <p id="classElement">Add a class</p>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="addClassButton_js">Add Class</button>
+                            <p id="classElement_js">Add a class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Remove a class to an HTML item
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="removeClassButton">Remove Class</button>
+                            <p id="remClassEl" class="bold">Remove my class</p>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="removeClassButton_js">Remove Class</button>
+                            <p id="remClassEl_js" class="bold">Remove my class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Toggle a class of an HTML item
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="toggleClassButton">Toggle Class</button>
+                            <p id="toggleClassEl" class="bold">Toggle my class</p>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="toggleClassButton_js">Toggle Class</button>
+                            <p id="toggleClassEl_js" class="bold">Toggle my class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Add a disabled attribute to an HTML button
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="attributeButton">Disable Me</button>
+            
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="attributeButton_js">Disable Me</button>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Remove the disabled attribute of an HTML button
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="opressedButton" disabled="true">Set me free!</button>
+                            <button class="button" id="remAtrributeButton">Let's do it</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="opressedButton_js" disabled="true">Set me free!</button>
+                            <button class="button" id="remAtrributeButton_js">Let's do it</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Set a data-src attribute to a img element
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="changeImgButton">Change Image</button>
+                            <img class="button" id="imgToChange" src="assets/images/JavaScript_logo.png">
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="changeImgButton_js">Change Image</button>
+                            <img class="button" id="imgToChange_js" src="assets/images/JavaScript_logo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Remove the data-src attribute of the img element
+                            <div>
+                            <h5>JQUERY Code</h5>
+                            <button class="button" id="remImgButton">Remove Image</button>
+                            <img class="button" id="imgToRem" src="assets/images/JavaScript_logo.png">
+                            </div>
+                            <div>
+                            <h5>Javascript Code</h5>
+                            <button class="button" id="remImgButton_js">Remove Image</button>
+                            <img class="button" id="imgToRem_js" src="assets/images/JavaScript_logo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Hide an HTML element on click (display: none)
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="hideButton">Hide me!</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="hideButton_js">Hide me!</button>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Show an HTML element on click (display: block)
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="showButton">Show Button</button>
+                            <button class="surpriseButton" id="surpriseButton">Surprise!</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="showButton_js">Show Button</button>
+                            <button class="surpriseButton" id="surpriseButton_js">Surprise!</button>
+                        </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Fade in an HTML element using jQuery
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="fadeInButton">Fade In</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="fadeInButton_js">Fade In</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Fade out an HTML element using jQuery
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="fadeOutButton">Fade Out</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="fadeOutButton_js">Fade Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Iterate a collection of elements and apply a change of style on them
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="iterateButton">Iterate collection</button>
+                            <ul id="iterableList">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="iterateButton_js">Iterate collection</button>
+                            <ul id="iterableList_js">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get the parent element of a certain element and change its font weight
+                            <h5>JQUERY Code</h5>
+                            <button class="button" id="ParentButton">I am your father</button>
+                            <ul id="iterableParent">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="ParentButton_js">I am your father</button>
+                            <ul id="iterableParent_js">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get the collection of children of a certain element and change its font weight
+                            <h5>JQUERY Code</h5>
+                            <button class="button" id="ParentButton2">I am your father</button>
+                            <ul id="iterableParent2">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="ParentButton2_js">I am your father</button>
+                            <ul id="iterableParent2_js">
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get all the elements that have a certain class and change their font weight
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="sameClass">Change all element's font</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="sameClass_js">Change all element's font</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get an item by id and change its font weight
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="fontChangeButton">Change my font</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="fontChangeButton_js">Change my font</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get all the elements that have a certain class and the display property of none and change their font color
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="sameClassButton">Change color</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="sameClassButton_js">Change color</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Get the options of a select element that are selected (attribute selected)
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="attrButton">Get options</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="attrButton_js">Get options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Change the href attribute of the first element (You have to create several elements)
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="hrefButton">Change href</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="hrefButton_js">Change href</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Show an alert with the value of the first input of the page (Create an input element to test this case)
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="alertButton">Show Alert</button>
+                            <input type="text" id="inputEl" placeholder="input the content here and click the botton">
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="alertButton_js">Show Alert</button>
+                            <input type="text" id="inputEl_js" placeholder="input the content here and click the botton">
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Remove all items from a specific selector
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="remSelButton">Remove items</button>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="remSelButton_js">Remove items</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div">
+                    <div class="center_div">
+                        <div class="center_div">
+                            Animate an item after 2 seconds from the initial page load
+                            <div>
+                             <h5>JQUERY Code</h5>
+                            <button class="button" id="animButton">Animate item</button>
+                            </div>
+                            <div id ="container">
+                                <div id ="animate"></div>
+                            </div>
+                            <div>
+                             <h5>Javascript Code</h5>
+                            <button class="button" id="animButton_js">Animate item</button>
+                            <div id ="container_js">
+                                <div id ="animate_js"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_div"></div>               
+            </section>
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/clickonlist.js"></script>
+    <script src="assets/js/variables.js"></script>
+</html>
